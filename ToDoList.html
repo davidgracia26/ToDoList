@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="ToDoList.css">
-  </head>
-  <body>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+</head>
 
-<table id="movingTable">
-  <tr>
-<th> Task Number:
-</th>
-<th> Task:
-</th>
-<th> Date Created:
-</th>
-<th> Completed:
-</th>
-  </tr>
+<body>
+    <br/>
 
+    <form name="myForm">
+        <p>New To Do Item:
+            <input type="text" name="newItem" id="newToDo" maxlength="30" placeholder="Enter list item here" />
+            <input type="submit" id="submit" value="Submit" />
+        </p>
+    </form>
 
+    <br/>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th> Task Number:
+                </th>
+                <th> Task:
+                </th>
+                <th> Date Created:
+                </th>
+                <th> Completed:
+                </th>
+            </tr>
+        </thead>
+        <tbody id="movingTable">
+        </tbody>
 
-</table>
+    </table>
 
+    <script src="ToDoList3.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
-<form name="myForm">
-  <p>New To Do Item:
-  <input type="text" name="newItem"  id="newToDo" maxlength="30" value = "Enter list item here"/>
-  <input type="submit"  id ="gru" value="Submit"/>
-  </p>
-</form>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+</body>
 
-<p id="feedback">
-</p>
-
-<script src="ToDoList3.js"></script>
-
-  </body>
 </html>
